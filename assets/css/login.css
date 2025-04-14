@@ -20,17 +20,21 @@
 	--red: #FC3B56;
 }
 
-body {
+html, body {
     display: flex;
     justify-content: center;
-    align-items: center;
+	align-items: center;
 	background: var(--grey);
 	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
 }
 
 .container {
     display: flex;
+	position: fixed;
     flex-direction: column;
+	justify-content:flex-start;
 	align-items: center;
     background-color: var(--light);
     width: 30%;
@@ -41,8 +45,8 @@ body {
 .brand {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	margin: 10% 0 5% ;
 }
 
@@ -64,6 +68,87 @@ body {
 	align-items: center;
 }
 
-.switch-lr {
+
+.switch {
 	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 5vh;
+}
+
+.switch input {
+	justify-content: center;
+	appearance: none;
+	width: 80%;
+	height: 5vh;
+	background-color: var(--grey);
+	outline: none;
+}
+
+.switch input::before,
+.switch input::after {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bolder;
+
+}
+
+.switch input::before {
+	content: 'Login';
+	left: 25%;
+}
+
+.switch input::after {
+	content: 'Register';
+	right: 25%;
+}
+
+.switch label {
+	z-index: 1;
+	position: absolute;
+	top: 5%;
+	bottom: 5%;
+}
+
+.switch input {
+	transition: .25s;
+}
+
+.switch input:checked::after,
+.switch input:checked::after {
+	color: var(--dark-blue);
+	transition: color 0.5s;
+
+}
+
+.switch input:checked+label {
+	left: 50%;
+	right: 50%;
+	background: var(--blue);
+	transition: left .5s right .4s .2s;
+}
+
+.switch input:not(:checked) {
+	background: var(--grey);
+	transition: background .4s;
+
+}
+.switch input:not(:checked)::before {
+	color: var(--dark);
+	transition: color .5s;
+
+}
+.switch input:not(:checked)::after {
+	color: var(--dark);
+	transition: color .5s;
+}
+
+.switch input:not(:checked) +label {
+	left: 48%;
+	right: 10%;
+	background: var(--light);
+	transition: left .4s .2s right .5s background .3s;
 }
