@@ -32,13 +32,13 @@ html, body {
 
 .container {
     display: flex;
-	position: fixed;
+	position: relative;
     flex-direction: column;
 	justify-content:flex-start;
 	align-items: center;
     background-color: var(--light);
-    width: 30%;
-    height: 80vh;
+    width: 480px;
+    height: 600px;
     border-radius: 20px;
 }
 
@@ -58,7 +58,7 @@ html, body {
 
 .brand img {
 	width: 90%;
-	border: 2px solid #000;
+	filter: drop-shadow(2px 2px var(--dark)) drop-shadow(-2px -2px 2px var(--light-blue));
 }
 
 .login-form {
@@ -66,89 +66,127 @@ html, body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
+.username {
+	display: flex;
+	gap: 10px;
+	width: 70%;
+	margin: 10px;
+}
 
-.switch {
+.input-box {
+	margin: 10px;
+	width: 70%;
+}
+.input-box label {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-email,
+.input-pass {
+	display: flex;
+	align-items: center;
+	height: 30px;
+}
+.input, .input-field {
+	background-color: var(--grey);
+}
+
+.input-box i {
+	padding: 0 3px;
+	align-items: center;
+}
+
+.input-field {
+	width: 100%;
+	height: 30px;
+	border: none;
+	outline: none;
+	padding: 0 3px;
+}
+
+.form-cols {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.col-1 {
+	display: flex;
+	align-items: baseline;
+	width: 50%;
+
+}
+
+.checkbox {
+	cursor: pointer;
+	margin-right: 4px;
+	accent-color: var(--blue);
+}
+
+.signin {
+	width: 70%;
+	margin: 20px 0;
+}
+
+.btn-submit {
+	width: 100%;
+	border: none;
+	background-color: var(--blue);
+	padding: 5px 0;
+	font-weight: bolder;
+	font-size: 16px;
+	color: var(--light);
+}
+
+.btn-submit:hover {
+	background-color: var(--dark-blue);
+}
+
+.hr-line {
+    border: 1px solid var(--dark-grey);
+	border-radius: 50px;
+	color: var(--dark-grey);
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+	width: 70%;
+	margin: 20px 0;
+}
+
+.hr-line::after {
+	background: var(--light);
+	content: "OR";
+	padding: 0 4px;
+	position: relative;
+	top: -13px;
+  }
+
+.direct-access {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.access-btn {
 	display: flex;
 	justify-content: center;
-	position: relative;
-	width: 100%;
-	height: 5vh;
+	align-items: center;
+	width: 70%;
 }
 
-.switch input {
-	justify-content: center;
-	appearance: none;
-	width: 80%;
-	height: 5vh;
-	background-color: var(--grey);
-	outline: none;
-}
-
-.switch input::before,
-.switch input::after {
-	position: absolute;
-	z-index: 2;
-	top: 50%;
-	transform: translateY(-50%);
+.access-btn button {
+	display: flex;
+	align-items: center;
+	background-color: var(--light);
+	font-size: 20px;
+	margin: 0 15px;
 	font-weight: bolder;
-
+	border: none;
 }
-
-.switch input::before {
-	content: 'Login';
-	left: 25%;
-}
-
-.switch input::after {
-	content: 'Register';
-	right: 25%;
-}
-
-.switch label {
-	z-index: 1;
-	position: absolute;
-	top: 5%;
-	bottom: 5%;
-}
-
-.switch input {
-	transition: .25s;
-}
-
-.switch input:checked::after,
-.switch input:checked::after {
-	color: var(--dark-blue);
-	transition: color 0.5s;
-
-}
-
-.switch input:checked+label {
-	left: 50%;
-	right: 50%;
-	background: var(--blue);
-	transition: left .5s right .4s .2s;
-}
-
-.switch input:not(:checked) {
-	background: var(--grey);
-	transition: background .4s;
-
-}
-.switch input:not(:checked)::before {
-	color: var(--dark);
-	transition: color .5s;
-
-}
-.switch input:not(:checked)::after {
-	color: var(--dark);
-	transition: color .5s;
-}
-
-.switch input:not(:checked) +label {
-	left: 48%;
-	right: 10%;
-	background: var(--light);
-	transition: left .4s .2s right .5s background .3s;
+.access-btn img {
+	width: 40px;
 }

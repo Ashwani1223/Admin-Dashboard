@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="assets/css/login.css">
     <script src="login.js"></script>
@@ -16,34 +18,47 @@
             <a href="#"><img src="assets/img/Hbeon labs logo.webp" alt="brand logo"></a>
         </div>
 
-        <div class="switch">
-            <input type="checkbox" class="switcher">
-            <label for="switcher"></label>
-        </div>
         <form action="#" class="login-form" autocomplete="off">
             <div class="input-box">
                 <label for="log-email" class="label">Email</label>
-                <input type="text" class="input-field" id="log-email" required>
-                <i class='bx bx-envelope icon'></i>
+                <div class="input-email input">
+                    <i class="fa-solid fa-user"></i> 
+                    <input type="text" class="input-field" id="log-email" placeholder="Email" required>
+                </div>
             </div>
             <div class="input-box">
-                <label for="log-pass" class="label">Password</label>
-                <input type="password" class="input-field" id="log-pass" required>
-                <i class='bx bx-lock-alt icon'></i>
+                <label for="log-pass" class="label ">Password</label>
+                <div class="input-pass input">
+                    <i class="fa-solid fa-lock"></i> 
+                    <input type="password" class="input-field" id="log-pass" placeholder="Password" required>
+                </div>
             </div>
             <div class="form-cols">
-                <div class="col-1"></div>
+                <div class="col-1">
+                    <input type="checkbox" class="checkbox">
+                    <label for="Checkbox" class="Remember">Remember me</label>
+                </div>
                 <div class="col-2">
                     <a href="#">Forgot password?</a>
                 </div>
             </div>
-            <div class="input-box">
-                <button class="btn-submit" id="SignInBtn">Sign In <i class='bx bx-log-in'></i></button>
+            <div class="signin">
+                <button class="btn-submit" id="SignInBtn">Sign In</button>
             </div>
             <div class="switch-form">
-                <span>Don't have an account? <a href="#">Register</a></span>
+                <span>Don't have an account? <a href="Registration.html">Register</a></span>
             </div>
-        </form>
+        </form> 
+
+        <hr class="hr-line">
+
+        <div class="direct-access">
+            <div class="access-btn">
+                <button class="google-btn"> <img src="assets/img/google.ico" alt="google logo"></button>
+                <button class="facebook-btn"> <img src="assets/img/facebook_5968764.png" alt="facebook logo"></button>
+                <button class="x-btn"> <img src="assets/img/twitter_5969020.png" alt="x logo"></button>
+            </div>
+        </div>
     </div>
 </body>
 

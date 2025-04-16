@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <script src="login.js"></script>
-
 </head>
+
 <body>
-<form action="#" class="register-form" autocomplete="off">
-    <div class="input-box">
-        <input type="text" class="input-field" id="reg-name" required>
-        <label for="reg-name" class="label">Username</label>
-        <i class='bx bx-user icon'></i>
-    </div>
-    <div class="input-box">
-        <input type="text" class="input-field" id="reg-email" required>
-        <label for="reg-email" class="label">Email</label>
-        <i class='bx bx-envelope icon'></i>
-    </div>
-    <div class="input-box">
-        <input type="password" class="input-field" id="reg-pass" required>
-        <label for="reg-pass" class="label">Password</label>
-        <i class='bx bx-lock-alt icon'></i>
-    </div>
-    <div class="form-cols">
-        <div class="col-1">
-            <input type="checkbox" id="agree">
-            <label for="agree"> I agree to terms & conditions</label>
+    <div class="container">
+        <div class="brand">
+            <a href="#"><img src="assets/img/Hbeon labs logo.webp" alt="brand logo"></a>
         </div>
-        <div class="col-2"></div>
+
+        <form action="#" class="login-form" autocomplete="off">
+            <div class="username">
+                <div class="user-fname user">
+                    <label for="name" class="label">First Name</label>
+                    <span class="fname-input input">
+                        <!-- <i class="fa-solid fa-user"></i>  -->
+                        <input type="text" class="input-field" id="first-name" placeholder="First Name" required>
+                    </span>
+                </div>
+                <div class="user-lname user">
+                    <label for="name" class="label">Last Name</label>
+                    <span class="lname-input input">
+                        <!-- <i class="fa-solid fa-user"></i>  -->
+                        <input type="text" class="input-field" id="last-name" placeholder="Last Name" required>
+                    </span>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="log-email" class="label">Email</label>
+                <div class="input-email input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="input-field" id="log-email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="log-pass" class="label ">Password</label>
+                <div class="input-pass input">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="input-field" id="log-pass" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-cols">
+                <div class="col-1">
+                    <input type="checkbox" class="checkbox">
+                    <label for="Checkbox" class="Remember"><p>I agree with terms and conditions</p></label>
+                </div>
+                <div class="col-2">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <div class="signin">
+                <button class="btn-submit" id="SignInBtn">Sign Up</button>
+            </div>
+            <div class="switch-form">
+                <span>Already have an account? <a href="login.html">Login</a></span>
+            </div>
+        </form>
+
+        <hr class="hr-line">
+
+        <div class="direct-access">
+            <div class="access-btn">
+                <button class="google-btn"> <img src="assets/img/google.ico" alt="google logo"></button>
+                <button class="facebook-btn"> <img src="assets/img/facebook_5968764.png" alt="facebook logo"></button>
+                <button class="x-btn"> <img src="assets/img/twitter_5969020.png" alt="x logo"></button>
+            </div>
+        </div>
     </div>
-    <div class="input-box">
-        <button class="btn-submit" id="SignUpBtn">Sign Up <i class='bx bx-user-plus' ></i></button>
-    </div>
-    <div class="switch-form">
-        <span>Already have an account? <a href="#">Login</a></span>
-    </div>
-</form>
 </body>
+
+
 </html>
