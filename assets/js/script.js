@@ -189,3 +189,10 @@ tooltip: {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+
+// Add Device ------------------------------------------------------------------------------------
+
+// Select option color change
+
+const deviceOption = document.getElementById(d-type)

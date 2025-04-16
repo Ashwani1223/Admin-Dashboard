@@ -13,11 +13,13 @@
 	--light: #fff;
 	--dark: #000;
 	--green: #81D43A;
+	--dark-green: #336c00 ;
 	--light-green: #E3FFCB;
 	--blue: #1775F1;
 	--light-blue: #D0E4FF;
 	--dark-blue: #0C5FCD;
 	--red: #FC3B56;
+	--dark-red: #dd001d;
 }
 
 html {
@@ -565,7 +567,114 @@ main .btn-send:hover {
 /* ------------------Add Device Content ------------------------- */
 
 .device {
+    background-color: var(--grey);
+	width: 100%;
+	height: 100vh;
+}
+
+
+.add-device {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	position: relative;
+	padding: 24px 20px 20px 20px;
+	margin-top: 30px;
+	width: 100%;
+	background-color: var(--light);
+	border-radius: 20px;
+}
+
+.device-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 20px;
+	width: 100%;
+	height: 100%;
+	font-weight: bolder;
+}
+
+.device-name,
+.device-type,
+.device-location {
+	margin: 5px 30px;
+	padding: 10px 0;
+	width: 95%;
 	
+}
+
+.device-data {
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+
+
+.add-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.add-btn button {
+	margin: 20px 0;
+	padding: 5px 0;
+	border-radius: 5px;
+	width: 95%;
+	font-weight: bolder;
+	background-color: var(--blue);
+	border: none;
+}
+
+.add-btn button:hover {
+	background-color: var(--dark-blue);
+}
+
+.device-data {
+	width: 95%;
+	margin: 20px 0;
+}
+
+.device-data h2 {
+	margin: 15px 0;
+}
+
+.m-device {
+	width: 100%;
+}
+
+.m-device, tr {
+	border: 1px solid var(--dark-grey);
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+.m-device th, td {
+	padding: 10px 0;
+}
+
+.m-device button {
+	border: none;
+	background-color: var(--light);
+	margin: 0 10px;
+	font-size: 20px;
+}
+
+.m-device .edit-btn {
+	color: var(--green);
+
+}
+.m-device .edit-btn:hover {
+	color: var(--dark-green);
+
+}
+.m-device .remove-btn {
+	color: var(--red);
+}
+.m-device .remove-btn:hover {
+	color: var(--dark-red);
 }
