@@ -589,9 +589,17 @@ main .btn-send:hover {
 .device-form {
 	display: flex;
 	flex-direction: column;
+	align-items: baseline;
+	width: 100%;
+	height: 100%;
+}
+
+.device-input {
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	margin: 20px 20px;
-	width: 100%;
+	width: 95%;
 	height: 100%;
 	font-weight: bolder;
 }
@@ -599,48 +607,52 @@ main .btn-send:hover {
 .device-name,
 .device-type,
 .device-location {
+	display: flex;
+	flex-direction: column;
 	margin: 5px 30px;
 	padding: 10px 0;
-	width: 95%;
+	width: 100%;
 	
 }
 
-.device-data {
+.device-data-insert {
+	margin: 5px 0;
 	width: 100%;
-	margin: 10px 0;
-	padding: 5px 0;
+	padding: 10px 10px;
+	background-color: var(--grey);
+	border:  1px solid var(--dark-grey);
 }
 
+.device-data {
+	margin: 5px 0;
+	width: 100%;
+	padding: 10px 10px;
+	gap: 10px;
+}
 
+.device-data h2 {
+	margin: 10px 0;
+}
 .add-btn {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+	justify-content: fl;
+	margin: 5px 30px;
 }
-
 .add-btn button {
-	margin: 20px 0;
-	padding: 5px 0;
-	border-radius: 5px;
-	width: 95%;
-	font-weight: bolder;
+	padding: 10px 15px;
 	background-color: var(--blue);
 	border: none;
+	border-radius: 5px;
+	color: var(--light);
+	font-weight: 700;
 }
 
 .add-btn button:hover {
 	background-color: var(--dark-blue);
 }
 
-.device-data {
-	width: 95%;
-	margin: 20px 0;
-}
 
-.device-data h2 {
-	margin: 15px 0;
-}
+/* Manage Device------------------------------------------------- */
 
 .m-device {
 	width: 100%;
@@ -677,4 +689,79 @@ main .btn-send:hover {
 }
 .m-device .remove-btn:hover {
 	color: var(--dark-red);
+}
+
+/* Add Client ------------------------------------------------------ */
+
+
+.client {
+	display: grid;
+	width: 95%;
+	align-content: center;
+	gap: 20px;
+	margin: 30px 0;
+}
+
+.add-client {
+	display: grid;
+	width: 100%;
+	align-content: center;
+	gap: 25px;
+	grid-template-columns: auto auto;
+	margin: 30px 0;
+}
+
+.client-details {
+	display: grid;
+	width: 100%;
+}
+
+.client-details input {
+	display: grid;
+	background-color: var(--grey);
+	padding: 10px 5px;
+	border: 1px solid var(--dark-grey);
+}
+
+.client-address {
+	width: 100%;
+}
+
+.client-address input {
+	width: 100%;
+	border: 1px solid var(--dark-grey);
+}
+
+.add-file label {
+	font-weight: 700;
+	margin: 5px 0;
+	
+}
+
+.client-notes textarea {
+	resize: none;
+	padding: 5px 5px;
+	background-color: var(--grey);
+	border: 1px solid var(--dark-grey);
+}
+
+.submit-btn input {
+	background-color: var(--blue);
+	padding: 10px 15px;
+	color: var(--light);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit-btn input:hover {
+	background-color: var(--dark-blue);
+}
+
+/* Add User------------------------------------------- */
+
+.user-status {
+	background-color: var(--grey);
+	padding: 10px 0;
+	margin: 10px 0;
 }

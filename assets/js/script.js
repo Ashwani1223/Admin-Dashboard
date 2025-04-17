@@ -193,6 +193,3 @@ chart.render();
 
 // Add Device ------------------------------------------------------------------------------------
 
-// Select option color change
-
-const deviceOption = document.getElementById(d-type)

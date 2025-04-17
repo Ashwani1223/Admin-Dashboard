@@ -120,41 +120,46 @@
             <ul class="breadcrumbs">
                 <li><a href="#">Home</a></li>
                 <li class="divider">/</li>
-                <li><a href="#" class="active">Devices</a></li>
+                <li><a href="#" class="active">Users</a></li>
                 <li class="divider">/</li>
-                <li><a href="#" class="active">Add Device</a></li>
+                <li><a href="#" class="active">Add User</a></li>
             </ul>
-            <div class="add-device">
-                <h1>Add Device</h1>
-                <form action="#" class="device-form">
-                    <div class="device-input">
-                        <div class="device-name">
-                            <label for="device">Device Name</label>
-                            <div class="input-device-name">
-                                <input type="text" class="device-data-insert" placeholder="e.g. Smart Light">
-                            </div>
-                        </div>
-                        <div class="device-type">
-                            <label for="device">Device Type</label>
-                            <div class="input-device-type">
-                                <select name="device" class="device-data-insert" id="d-type">
-                                    <option value="sensor">Sensor</option>
-                                    <option value="sensor">Sensor</option>
-                                    <option value="sensor">Sensor</option>
-                                    <option value="sensor">Sensor</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="device-location">
-                            <label for="device">Location</label>
-                            <div class="input-device-location">
-                                <input type="text" class="device-data-insert" placeholder="e.g. Living Room">
-                            </div>
-                        </div>
+            <div class="add-device manage-device">
+                <h1>Add User</h1>
+                <form action="#" class="client">
+                    <div class="add-client">
+                        <span class="client-name client-details">
+                            <input type="text" placeholder="Full Name">
+                        </span>
+                        <span class="client-email client-details">
+                            <input type="text" placeholder="Username">
+                        </span>
+                        <span class="client-number client-details">
+                            <input type="email" placeholder="Email">
+                        </span>
+                        <span class="client-companyName client-details">
+                            <input type="number" placeholder="Phone Number">
+                        </span>
                     </div>
-                    <div class="add-btn">
-                        <button>Add Device</button>
+
+                    <div class="client-address client-details">
+                        <input type="password" placeholder="Password">
                     </div>
+                    <div class="client-address client-details">
+                        <input type="password" placeholder=" Confirm Password">
+                    </div>
+
+                    <div class="client-notes client-details">
+                        <select name="device" class="user-status"  id="d-type">
+                            <option value="sensor">Active</option>
+                            <option value="sensor">Inactive</option>
+                        </select>
+                    </div>
+
+                    <div class="submit-btn">
+                        <input type="submit" value="Add User">
+                    </div>
+
                 </form>
             </div>
         </main>

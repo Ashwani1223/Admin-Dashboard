@@ -97,7 +97,7 @@ html, body {
 }
 
 .input-box i {
-	padding: 0 3px;
+	padding: 0 8px;
 	align-items: center;
 }
 
@@ -106,7 +106,7 @@ html, body {
 	height: 30px;
 	border: none;
 	outline: none;
-	padding: 0 3px;
+	padding: 0 5px;
 }
 
 .form-cols {
