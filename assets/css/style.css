@@ -566,14 +566,14 @@ main .btn-send:hover {
 
 /* ------------------Add Device Content ------------------------- */
 
-.device {
+.main {
     background-color: var(--grey);
 	width: 100%;
 	height: 100vh;
 }
 
 
-.add-device {
+.add-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -586,15 +586,15 @@ main .btn-send:hover {
 	border-radius: 20px;
 }
 
-.device-form {
+.form-section {
 	display: flex;
 	flex-direction: column;
-	align-items: baseline;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 }
 
-.device-input {
+.input-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -623,14 +623,14 @@ main .btn-send:hover {
 	border:  1px solid var(--dark-grey);
 }
 
-.device-data {
+.stored-data {
 	margin: 5px 0;
 	width: 100%;
 	padding: 10px 10px;
 	gap: 10px;
 }
 
-.device-data h2 {
+.stored-data h2 {
 	margin: 10px 0;
 }
 .add-btn {
@@ -654,40 +654,40 @@ main .btn-send:hover {
 
 /* Manage Device------------------------------------------------- */
 
-.m-device {
+.table-data {
 	width: 100%;
 }
 
-.m-device, tr {
+.table-data, tr {
 	border: 1px solid var(--dark-grey);
 	border-collapse: collapse;
 	width: 100%;
 	text-align: center;
 }
 
-.m-device th, td {
+.table-data th, td {
 	padding: 10px 0;
 }
 
-.m-device button {
+.table-data button {
 	border: none;
 	background-color: var(--light);
 	margin: 0 10px;
 	font-size: 20px;
 }
 
-.m-device .edit-btn {
+.table-data .edit-btn {
 	color: var(--green);
 
 }
-.m-device .edit-btn:hover {
+.table-data .edit-btn:hover {
 	color: var(--dark-green);
 
 }
-.m-device .remove-btn {
+.table-data .remove-btn {
 	color: var(--red);
 }
-.m-device .remove-btn:hover {
+.table-data .remove-btn:hover {
 	color: var(--dark-red);
 }
 
