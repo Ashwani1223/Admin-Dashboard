@@ -564,7 +564,7 @@ main .btn-send:hover {
 }
 
 
-/* ------------------Add Device Content ------------------------- */
+/* ------------------Add Device Content------------------------- */
 
 .main {
     background-color: var(--grey);
@@ -765,3 +765,7 @@ main .btn-send:hover {
 	padding: 10px 0;
 	margin: 10px 0;
 }
+
+
+/* ----------------------------------------- My Profile -------------------------------------------- */
+
