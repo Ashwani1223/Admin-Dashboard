@@ -191,5 +191,119 @@ var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
 
-// Add Device ------------------------------------------------------------------------------------
+//--------------------------------------------------------UI Componenet ------------------------------------------------------
+
+//-------------------------------------------------------- Charts ------------------------------------------------------
+
+const chart1 = document.getElementById('myChart-1');
+const chart2 = document.getElementById('myChart-2');
+const chart3 = document.getElementById('myChart-3');
+const chart4 = document.getElementById('myChart-4');
+
+new Chart(chart1, {
+  type: 'bar',
+  data: {
+	labels: ['Smart Light', 'Security Cam', 'Door Locker', 'Smart Fan', 'Smart Remote'],
+	datasets: [{
+	  label: '# of Sells',
+	  data: [112, 119, 56, 98, 42],
+	  borderWidth: 1,
+	  backgroundColor: [
+		'rgb(255, 99, 132)',
+		'rgb(75, 192, 192)',
+		'rgb(255, 205, 86)',
+		'rgb(201, 203, 207)',
+		'rgb(54, 162, 235)'
+	  ] 
+	}]
+  },
+  options: {
+	scales: {
+	  y: {
+		beginAtZero: true,
+		suggestedMax: 200
+	  }
+	}
+  }
+});
+
+new Chart(chart2, {
+  type: 'doughnut',
+  data: {
+	labels: ['Smart Light', 'Security Cam', 'Door Locker', 'Smart Fan', 'Smart Remote'],
+	datasets: [{
+	  label: '# of Sells',
+	  data: [112, 119, 56, 98, 42],
+	  borderWidth: 1,
+	  backgroundColor: [
+		'rgb(255, 99, 132)',
+		'rgb(75, 192, 192)',
+		'rgb(255, 205, 86)',
+		'rgb(201, 203, 207)',
+		'rgb(54, 162, 235)'
+	  ] 
+	}]
+  },
+  options: {
+	scales: {
+	  y: {
+		beginAtZero: true,
+		suggestedMax: 200
+	  }
+	}
+  }
+});
+new Chart(chart3, {
+  type: 'polarArea',
+  data: {
+	labels: ['Smart Light', 'Security Cam', 'Door Locker', 'Smart Fan', 'Smart Remote'],
+	datasets: [{
+	  label: '# of Sells',
+	  data: [112, 119, 56, 98, 42],
+	  borderWidth: 1,
+	  backgroundColor: [
+		'rgb(255, 99, 132)',
+		'rgb(75, 192, 192)',
+		'rgb(255, 205, 86)',
+		'rgb(201, 203, 207)',
+		'rgb(54, 162, 235)'
+	  ] 
+	}]
+  },
+  options: {
+	scales: {
+	  y: {
+		beginAtZero: true,
+		suggestedMax: 200
+	  }
+	}
+  }
+});
+
+new Chart(chart4, {
+  type: 'line',
+  data: {
+	labels: ['Smart Light', 'Security Cam', 'Door Locker', 'Smart Fan', 'Smart Remote'],
+	datasets: [{
+	  label: '# of Sells',
+	  data: [112, 119, 56, 98, 42],
+	  borderWidth: 1,
+	  backgroundColor: [
+		'rgb(255, 99, 132)',
+		'rgb(75, 192, 192)',
+		'rgb(255, 205, 86)',
+		'rgb(201, 203, 207)',
+		'rgb(54, 162, 235)'
+	  ] 
+	}]
+  },
+  options: {
+	scales: {
+	  y: {
+		beginAtZero: true,
+		suggestedMax: 200
+	  }
+	}
+  }
+});
 

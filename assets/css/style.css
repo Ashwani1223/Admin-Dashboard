@@ -769,3 +769,192 @@ main .btn-send:hover {
 
 /* ----------------------------------------- My Profile -------------------------------------------- */
 
+.main {
+    background-color: var(--grey);
+	width: 100%;
+	height: 100vh;
+}
+
+.profile-container {
+    position: relative;
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+}
+
+.Profile-tag {
+    margin: 15px auto 20px auto;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	
+}
+  
+.myProfile-tag {
+	width: 100%; 
+	justify-content: flex-start; 
+	border-bottom: 1px solid var(--dark-grey); 
+	line-height: 0.1em;
+	margin: 20px 0 20px 0;
+	font-size: 22px; 
+ } 
+ 
+.myProfile-tag span { 
+	 background:var(--grey); 
+	 padding:0 10px; 
+}
+
+.profile-data {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 130px;
+	background-color: var(--light);
+	border-radius: 20px;
+	margin: 10px 0;
+	padding: 0 20px;
+}
+
+.myProfile-img {
+	position: relative;
+	margin: 10px 20px;
+	justify-content: center;
+	border-radius: 50%;
+}
+.myProfile-img img {
+	width: 100px;
+	border-radius: 50%;
+	border: 2px solid var(--light);
+}
+.myProfile-img img:hover {
+	outline: 2px solid var(--dark-blue);
+}
+
+.camera-button {
+	position: absolute;
+	background-color: var(--light);
+	padding: 5px;
+	border-radius: 50%;
+	bottom: 6px;
+	right: 5px;
+	cursor: pointer;
+	color: var(--blue);
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 10px;
+	transition: .3s ease;
+}
+
+
+.camera-button:hover {
+	color: var(--dark-blue);
+}
+
+.myProfile-data {
+	display: flex;
+	flex-direction: column;
+	row-gap: 6px;
+	padding: 10px;
+
+}
+
+.myProfile-data h3 {
+	color: var(--blue);
+	font-size: 18px;
+}
+.myProfile-data p {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.profile-table {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: var(--light);
+	padding: 20px 50px;
+	margin: 10px 0;
+	border-radius: 20px;
+}
+.profile-table hr {
+	margin: 20px 0;
+}
+.personal-info-tag {
+	display: flex;
+	justify-content: space-between;
+}
+
+.personal-info-tag .info-editBtn {
+	display: flex;
+	align-items: center;
+	background-color: var(--blue);
+	color: var(--light);
+	padding: 7px 12px;
+	border-radius: 8px;
+	border: none;
+	font-weight: bold;
+}
+
+.personal-info-tag .info-editBtn i {
+	padding: 0 0 0 10px;
+}
+
+.personal-info-tag .info-editBtn:hover {
+	background-color: var(--dark-blue);
+}
+
+.personal-info-table {
+	border-collapse: separate;
+	
+}
+.personal-info-table th,
+.personal-info-table td {
+	text-align: left;
+}
+
+.spacer {
+	height: 25px;
+}
+
+/* -----------------------------------------UI Component---------------------------------------------------- */
+
+
+/* -----------------------------------------Charts---------------------------------------------------- */
+
+.chart-component-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	width: 100%;
+}
+
+.chart-component {
+	padding: 30px;
+	margin-top: 20px;
+	background-color: var(--light);
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px var(--dark-grey);
+}
+
+.chart-1 {
+	grid-column: 1 / span 2; 
+}
+
+.chart-2 {
+	grid-column: 1; 
+}
+
+.chart-3 {
+	grid-column: 2; 
+}
+
+.chart-4 {
+	grid-column: 1 / span 2; 
+}
+
+
+.chart-component canvas {
+	width: 100%;
+}

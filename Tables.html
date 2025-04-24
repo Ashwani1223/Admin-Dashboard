@@ -10,6 +10,7 @@
 
     <script src="assets/js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -116,97 +117,111 @@
         <!-- Main Section Start -->
 
         <main class="main device" id="main">
-            <h1 class="title">Main</h1>
+            <h1 class="title">UI Component</h1>
             <ul class="breadcrumbs">
                 <li><a href="#">Home</a></li>
                 <li class="divider">/</li>
-                <li><a href="#" class="active">Devices</a></li>
+                <li><a href="#" class="active">UI Component</a></li>
                 <li class="divider">/</li>
-                <li><a href="#" class="active">Manage Device</a></li>
+                <li><a href="#" class="active">Tables</a></li>
             </ul>
             <div class="add-section manage-device">
-                <h1>Manage Device</h1>
-                <div class="stored-data device-data">
-                    <h2><a href="Add device.html">Add Device</a></h2>
-                    <hr>
-                    <h2>Manage Device</h2>
+                <div class="stored-data report-data">
+                    <h2>Basic Table</h2>
                     <table class="table-data">
                         <thead>
                             <tr>
-                                <th>Device Name</th>
-                                <th>Type</th>
-                                <th>Location</th>
-                                <th>Status</th>
-                                <th>Active</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Company</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Smart Light</td>
-                                <td>Light</td>
-                                <td>Living Room</td>
-                                <td>Online</td>
+                                <td>Manish Negi</td>
+                                <td>manish16@example.com</td>
+                                <td>77854685985</td>
+                                <td>ABC Corp</td>
                                 <td>
                                     <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
                                     <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Security Cam</td>
-                                <td>Camera</td>
-                                <td>Front Door</td>
-                                <td>Offline</td>
+                                <td>Anshul Kotiya</td>
+                                <td>Anshul26@example.com</td>
+                                <td>9958768955</td>
+                                <td>LIC Corp</td>
+                                <td>
+                                    <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Manish Negi</td>
+                                <td>manish16@example.com</td>
+                                <td>77854685985</td>
+                                <td>ABC Corp</td>
                                 <td>
                                     <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
                                     <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Smart Light</td>
-                                <td>Light</td>
-                                <td>Living Room</td>
-                                <td>Online</td>
+                                <td>Anshul Kotiya</td>
+                                <td>Anshul26@example.com</td>
+                                <td>9958768955</td>
+                                <td>LIC Corp</td>
+                                <td>
+                                    <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Manish Negi</td>
+                                <td>manish16@example.com</td>
+                                <td>77854685985</td>
+                                <td>ABC Corp</td>
                                 <td>
                                     <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
                                     <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Security Cam</td>
-                                <td>Camera</td>
-                                <td>Front Door</td>
-                                <td>Offline</td>
+                                <td>Anshul Kotiya</td>
+                                <td>Anshul26@example.com</td>
+                                <td>9958768955</td>
+                                <td>LIC Corp</td>
                                 <td>
                                     <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
                                     <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>Smart Light</td>
-                                <td>Light</td>
-                                <td>Living Room</td>
-                                <td>Online</td>
-                                <td>
-                                    <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Security Cam</td>
-                                <td>Camera</td>
-                                <td>Front Door</td>
-                                <td>Offline</td>
-                                <td>
-                                    <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button class="remove-btn"><i class="fa-solid fa-eraser"></i></button>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
-
-
             </div>
+
+            <div class="advance-table">
+                <h2>Advance Table</h2>
+
+                <div class="table-2">
+                    <table>
+                        <tr>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
         </main>
 
         <!-- Main Section End -->

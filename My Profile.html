@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="Favicon" href="assets/img/Favicon.png">
-    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -90,9 +90,9 @@
                     </ul>
                 </li>
                 <li class="divider" data-text="UI Component">UI Component</li>
-                <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
-                <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
-                <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+                <li><a href="Charts.html"><i class='bx bxs-chart icon'></i> Charts</a></li>
+                <!-- <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li> -->
+                <li><a href="Tables.html"><i class='bx bx-table icon'></i> Tables</a></li>
                 <li>
                     <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i
                             class='bx bx-chevron-right icon-right'></i></a>
@@ -117,22 +117,86 @@
         <main class="main profile-main" id="main">
 
             <div class="profile-container">
-                <div class="myProfile-space">
-                    <hr class="hr-text" data-content="My Profile">
+                <div class="Profile-tag">
+                    <h2 class="myProfile-tag"><span>My Profile</span></h2>
                 </div>
 
-                <div class="profile-data">
-                    <div class="myProfile-img">
-                        <img src="assets/img/Profile-Img.jpg" alt="Profile Image">
-                    </div>
+                <div class="profile-short-data">
 
-                    <div class="Myprofile-data">
-                        <h3>Ashwani Patel</h3>
-                        <h4>Admin</h4>
-                        <h4>Alpha 1, Greater Noida</h4>
+                    <div class="profile-data">
+                        <div class="myProfile-img">
+                            <img src="assets/img/Profile-Img.jpg" alt="Profile Image">
+                            <label for="profile-upload" class="camera-button">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+                        </div>
+
+                        <div class="myProfile-data">
+                            <h3>Ashwani Patel</h3>
+                            <p>Admin</p>
+                            <p>Alpha 1, Greater Noida</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="profile-table personal-info">
+                    <div class="personal-info-tag">
+                        <h3>Personal Information</h3>
+                        <button class="info-editBtn">Edit <i class="fa-regular fa-pen-to-square"></i></button>
+                    </div>
+                    <hr>
+
+
+                    <table class="personal-info-table">
+                        <tr class="info-row1">
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Date Of Birth</th>
+                        </tr>
+                        <tr class="info-row1">
+                            <td>Ashwani</td>
+                            <td>Patel</td>
+                            <td>23/12/2004</td>
+                        </tr>
+
+                        <tr class="spacer"></tr>
+                        
+                        <tr class="info-row2">
+                            <th>Email Address</th>
+                            <th>Phone Number</th>
+                            <th>User Role</th>
+                        </tr>
+                        <tr class="info-row2">
+                            <td>ashwanipatel2312@gmail.com</td>
+                            <td>+91-1234567890</td>
+                            <td>Admin</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="profile-table personal-info">
+                    <div class="personal-info-tag">
+                        <h3>Address</h3>
+                        <button class="info-editBtn">Edit <i class="fa-regular fa-pen-to-square"></i></button>
+                    </div>
+                    <hr>
+
+
+                    <table class="personal-info-table">
+                        <tr class="info-row1">
+                            <th>Country</th>
+                            <th>City</th>
+                            <th>Postal Code</th>
+                        </tr>
+                        <tr class="info-row1">
+                            <td>India</td>
+                            <td>Greater Noida</td>
+                            <td>201310</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
+
 
 
 
