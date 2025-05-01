@@ -958,3 +958,19 @@ main .btn-send:hover {
 .chart-component canvas {
 	width: 100%;
 }
+
+/* ----------------------------------------Tables---------------------------------------------- */
+.advance-table th {
+	background-color: var(--blue);
+	color: var(--light);
+}
+
+.advance-table tr:nth-child(even) {
+	background-color: var(--grey);
+
+}
+
+.advance-table .remove-btn-even,
+.advance-table .edit-btn-even {
+	background-color: var(--grey);
+}
